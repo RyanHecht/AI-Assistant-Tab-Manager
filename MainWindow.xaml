@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="AIAssistantPanes.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="AI Assistant Panes" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Button x:Name="AddClaudeButton" Content="New Claude" Click="AddClaudeButton_Click" Margin="0,0,10,0"/>
+            <Button x:Name="AddChatGPTButton" Content="New ChatGPT" Click="AddChatGPTButton_Click" Margin="0,0,10,0"/>
+            <Button x:Name="AddCopilotButton" Content="New Copilot" Click="AddCopilotButton_Click"/>
+        </StackPanel>
+
+        <TabControl x:Name="AssistantTabs" Grid.Row="1" SelectionChanged="AssistantTabs_SelectionChanged">
+        </TabControl>
+    </Grid>
+</Window>
