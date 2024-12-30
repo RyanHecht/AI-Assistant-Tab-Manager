@@ -1,0 +1,1 @@
+I got tired of trying to remember which browser window had my active Claude/ChatGPT/GitHub Copilot conversations. I decided to build this INCREDIBLY SIMPLE WebView-powered WPF app to manage all my LLM conversations in one window (plus, this uses waaaay less memory than another Chrome/Firefox/Edge window 😛).
